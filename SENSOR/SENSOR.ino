@@ -29,6 +29,7 @@ void setup()
   pinMode (7, OUTPUT); 
   pinMode (8, OUTPUT);
 
+
   //Initialize the DHT sensor
   dht.begin();  
 }
@@ -52,6 +53,7 @@ Serial.print("Humidity =");
 if (temp>27){
   digitalWrite(7, HIGH);  // turn the LED on (HIGH is the voltage level)
   delay(1000); 
+
   
 }
 if (hum>80){
